@@ -7,4 +7,4 @@ RUN npm run build
 
 # Stage 2: Create the final image with Nginx
 FROM nginx:alpine 
-COPY --from=builder /app/dist/smart-home /usr/share/nginx/html
+COPY --from=builder /app/dist/front_react /usr/share/nginx/html
